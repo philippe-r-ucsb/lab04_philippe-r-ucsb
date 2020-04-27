@@ -1,7 +1,11 @@
 #include "utility.h"
 #include "tddFuncs.h"
+#include "iostream"
+
+using namespace std;
 
 int main() {
+
 
   assertEquals(true,isEven(2),"isEven(2)");
   assertEquals(false,isEven(3),"isEven(3)");
@@ -9,6 +13,7 @@ int main() {
   assertEquals(false,isEven(55),"isEven(55)");
   assertEquals(false,isEven(-55),"isEven(-55)");
   assertEquals(true,isEven(-80),"isEven(-80)");
+
 
 
   assertEquals(false,isOdd(2),"isOdd(2)");
@@ -23,7 +28,8 @@ int main() {
   assertEquals(true,isPrime(3),"isPrime(3)");
   assertEquals(false,isPrime(4),"isPrime(4)");
   assertEquals(false,isPrime(55),"isPrime(55)");
-  
+
+
   assertEquals(true,isPrime(859),"isPrime(859)");
   assertEquals(false,isPrime(861),"isPrime(861)");
   assertEquals(true,isPrime(863),"isPrime(863)");

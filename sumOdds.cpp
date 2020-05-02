@@ -5,5 +5,10 @@
 #include "utility.h"
 
 int sumOdds(int a[], int size) {
-  return -42; // STUB!  Replace with correct code.
+  int sum_odds = 0;
+  for(int i = 0; i < size; i++) {
+    int current = a[i];
+    sum_odds += isOdd(current) * current;
+  }
+  return sum_odds;
 }
